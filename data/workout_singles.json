@@ -1,0 +1,112 @@
+{
+    "Biceps Curls": {
+      "type": "Pull",
+      "title": "Push",
+      "sets": 4
+    },
+    "Preacher Curls": {
+      "type": "Pull",
+      "title": "Push",
+      "sets": 2
+    },
+    "Squats": {
+      "type": "Legs",
+      "title": "Squats",
+      "sets": 4
+    },
+    "Deadlifts": {
+      "type": "Legs",
+      "title": "Deadlifts",
+      "sets": 4
+    },
+    "Bench Press": {
+      "type": "Push",
+      "title": "Bench Press",
+      "sets": 4
+    },
+    "Shoulder Press": {
+      "type": "Push",
+      "title": "Shoulder Press",
+      "sets": 4
+    },
+    "Pull-up": {
+      "type": "Pull",
+      "title": "Pull-up",
+      "sets": 4
+    },
+    "Lat Pulldown": {
+      "type": "Pull",
+      "title": "Lat Pulldown",
+      "sets": 4
+    },
+    "Leg Press": {
+      "type": "Legs",
+      "title": "Leg Press",
+      "sets": 4
+    },
+    "Leg Curls": {
+      "type": "Legs",
+      "title": "Leg Curls",
+      "sets": 4
+    },
+    "Incline Bench Press": {
+      "type": "Push",
+      "title": "Incline Bench Press",
+      "sets": 4
+    },
+    "Dumbbell Flyes": {
+      "type": "Push",
+      "title": "Dumbbell Flyes",
+      "sets": 4
+    },
+    "Barbell Rows": {
+      "type": "Pull",
+      "title": "Barbell Rows",
+      "sets": 4
+    },
+    "Dumbbell Rows": {
+      "type": "Pull",
+      "title": "Dumbbell Rows",
+      "sets": 4
+    },
+    "Leg Extensions": {
+      "type": "Legs",
+      "title": "Leg Extensions",
+      "sets": 4
+    },
+    "Standing Calf Raises": {
+      "type": "Legs",
+      "title": "Standing Calf Raises",
+      "sets": 4
+    },
+    "Tricep Dips": {
+      "type": "Push",
+      "title": "Tricep Dips",
+      "sets": 4
+    },
+    "Skull Crushers": {
+      "type": "Push",
+      "title": "Skull Crushers",
+      "sets": 4
+    },
+    "Barbell Curls": {
+      "type": "Pull",
+      "title": "Barbell Curls",
+      "sets": 4
+    },
+    "Hammer Curls": {
+      "type": "Pull",
+      "title": "Hammer Curls",
+      "sets": 4
+    },
+    "Leg Raises": {
+      "type": "Legs",
+      "title": "Leg Raises",
+      "sets": 4
+    },
+    "Plank": {
+      "type": "Legs",
+      "title": "Plank",
+      "sets": 4
+    }
+}

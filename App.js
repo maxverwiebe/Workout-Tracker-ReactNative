@@ -1,20 +1,41 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import 'react-native-gesture-handler';
+import React, { createContext, useState, useEffect } from 'react';
+import AppNavigator from './components/appnavigator.js';
+import { NavigationContainer } from '@react-navigation/native';
+import AsyncStorage, { useAsyncStorage}  from '@react-native-async-storage/async-storage'
 
-export default function App() {
+export const WorkoutDataContext = createContext([]);
+export const WorkoutDataSetterContext = createContext(() => {}); // Neuen Context für setWorkoutData erstellen
+
+const App = () => {
+  const [workoutData, setWorkoutData] = useState([]);
+
+  useEffect(() => {
+    const restoreData = async () => {
+      try {
+        const data = await AsyncStorage.getItem('workoutData');
+        if (data) {
+          setWorkoutData(JSON.parse(data));
+          console.log(data)
+        }
+      } catch (error) {
+        console.log('Fehler beim Wiederherstellen der Daten:', error);
+      }
+    };
+  
+    restoreData();
+  }, []);
+  
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <WorkoutDataContext.Provider value={workoutData}>
+      <WorkoutDataSetterContext.Provider value={setWorkoutData}>
+        <NavigationContainer>
+          <AppNavigator />
+        </NavigationContainer>
+      </WorkoutDataSetterContext.Provider>
+    </WorkoutDataContext.Provider>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
